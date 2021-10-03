@@ -2,8 +2,10 @@
 :root {
     --primary: #FF6464;
     --secondary: #00A8CC;
+    --black: #000000;
     --dark: #21243D;
     --light: #8695A4;
+    --light-bg: #EDF7FA;
 }
 
 /* normalize */
@@ -19,6 +21,10 @@ html {
 body {
     margin: 0;
     font-size: 1rem;
+}
+
+.body--lock {
+    overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -42,3 +48,40 @@ img {
 }
 
 /* page */
+.container {
+    margin: 0 auto;
+    max-width: 890px;
+    padding: 0 15px;
+}
+
+/* header */
+
+.navbar {
+    padding: 2rem 0 1.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 3.3rem;
+}
+
+.nav-menu__link {
+    font-size: 2em;
+    font-weight: 500;
+    color: var(--black);
+    transition: 0.4s color;
+}
+
+.nav-menu__link:hover {
+    color: var(--primary);
+}
+
+.menu-button {
+    display: none;
+}
+
