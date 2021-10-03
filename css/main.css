@@ -56,6 +56,10 @@ img {
 
 /* header */
 
+.header__container {
+    margin: 0 6rem;
+}
+
 .navbar {
     padding: 2rem 0 1.2rem;
 
